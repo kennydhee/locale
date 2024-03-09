@@ -22,7 +22,7 @@ export const LGAs = () => {
                     localStorage.setItem("requestedPath", requestedPath)
                     window.location.href = "/api"
                 } else {
-                const response = await axios.get("https://mileu.onrender.com/lgas", {
+                const response = await axios.get("https://locale-fl2x.onrender.com/lgas", {
                     headers: { "Authorization": `Bearer ${storedApiKey}` }
                 });
                     setLgas(response.data);

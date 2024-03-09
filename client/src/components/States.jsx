@@ -21,7 +21,7 @@ export const States = () => {
                     localStorage.setItem("requestedPath", requestedPath)
                     window.location.href = "/api"
                 } else {
-                const response = await axios.get("https://mileu.onrender.com/states", {
+                const response = await axios.get("https://locale-fl2x.onrender.com/states", {
                     headers: { "Authorization": `Bearer ${storedApiKey}` }
                 });
                     setStates(response.data);

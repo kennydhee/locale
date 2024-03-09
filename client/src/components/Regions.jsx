@@ -21,7 +21,7 @@ export const Regions = () => {
                     localStorage.setItem("requestedPath", requestedPath)
                     window.location.href = "/api"
                 } else {
-                const response = await axios.get("https://mileu.onrender.com/regions", {
+                const response = await axios.get("https://locale-fl2x.onrender.com/regions", {
                     headers: { "Authorization": `Bearer ${storedApiKey}` }
                 });
                     setRegions(response.data);

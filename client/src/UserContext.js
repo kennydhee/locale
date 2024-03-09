@@ -15,7 +15,7 @@ export const UserProvider = ({ children }) => {
     // LOGIN VALIDATION
     const handleLogin = async (email, password) => {
       try {
-        const response = await axios.post("https://mileu.onrender.com/sign-in", { email, password });
+        const response = await axios.post("https://locale-fl2x.onrender.com/sign-in", { email, password });
   
         if (response.status === 200) {
           console.log("Success:", response.data);

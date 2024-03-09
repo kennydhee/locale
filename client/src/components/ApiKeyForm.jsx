@@ -12,7 +12,7 @@ export const ApiKeyForm = () => {
         e.preventDefault();
         
         try {
-            const response = await axios.post(`https://mileu.onrender.com/api-key/${apiKey}`);
+            const response = await axios.post(`https://locale-fl2x.onrender.com/api-key/${apiKey}`);
             if (response.status === 200) {
                 localStorage.setItem("apiKey", apiKey);
                 setFlashMessage({
