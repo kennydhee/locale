@@ -234,7 +234,6 @@ async def signin_user(user_request: UserLoginRequest, db: Session = Depends(get_
             raise HTTPException(status_code=401, detail="Invalid credentials")
 
         access_token = create_access_token(data={"sub": user.email})
-        print(f"Access Token: {access_token}")
 
         return JSONResponse(content={
             "access_token": access_token, "token_type": "bearer",
